@@ -52,7 +52,7 @@ class PromotionsTest extends \PHPUnit_Framework_TestCase
     $this->httpClient->expects($this->once())->method('request')->with('integrations/GetPromotions', 'GET')
       ->willReturn($expected);
     $promotions = $this->getPromotions();
-    $this->assertEquals($expected, json_encode($promotions->getPromotions()));
+    $this->assertEquals($expected, $promotions->getPromotions());
   }
 
   public function testDeletePromotions()

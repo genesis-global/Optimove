@@ -51,7 +51,7 @@ class Promotions
    */
   public function GetPromotions()
   {
-    return json_decode($this->httpClient->request('integrations/GetPromotions', 'GET'));
+    return $this->httpClient->request('integrations/GetPromotions', 'GET', []);
   }
 
   /**

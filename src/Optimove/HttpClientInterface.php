@@ -15,10 +15,10 @@ interface HttpClientInterface
    * @param string $uri
    * @param string $method
    * @param array|null $parameters
-   * @return string
+   * @return mixed
    * @throws ResponseException
    */
-  public function request(string $uri, string $method, array $parameters = null) :string;
+  public function request(string $uri, string $method, array $parameters = []);
 
   /**
    * @param array $parameters

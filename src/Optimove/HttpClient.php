@@ -36,7 +36,7 @@ class HttpClient implements HttpClientInterface
   /**
    * @inheritdoc
    */
-  public function request(string $uri, string $method, array $parameters = null) :string
+  public function request(string $uri, string $method, array $parameters = null)
   {
     $url = $this->baseUrl . $uri;
 
@@ -44,12 +44,13 @@ class HttpClient implements HttpClientInterface
       $method,
       $url,
       $this->getHeaders(),
-      ($parameters != null) ? $this->getParameters($parameters) : null
+      ($parameters != null) ? $this->getParameters($parameters) : ''
     );
 
     if ($result->code >= 400) {
       throw new ResponseException($result->body, $result->code);
     }
+
     return $result->body;
   }
 
