@@ -1,5 +1,5 @@
 {
-    "name": "genesis/optimove",
+    "name": "genesis-global/optimove",
     "description": "Opitmove API Client",
     "type": "library",
     "require": {
