@@ -1,6 +1,6 @@
 {
     "name": "genesis-global/optimove",
-    "description": "Opitmove API Client",
+    "description": "Optimove API Client",
     "type": "library",
     "require": {
         "php": ">=7.0.0",
@@ -14,7 +14,7 @@
     "authors": [
         {
             "name": "Genesis Global",
-            "email": "ala@ma.pl"
+            "email": "noreply@genesisglobal.company"
         }
     ],
     "autoload": {
